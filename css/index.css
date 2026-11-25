@@ -9,10 +9,10 @@ header {
 
 .logo{
     position: relative;
-    left: 10px
+    left: 10px;
 }
 
-nav a {
+header nav a {
     background-color: rgb(0, 120, 245);
     color: white;
     text-decoration: none;
@@ -21,7 +21,7 @@ nav a {
     padding: 5px 8px;
 }
 
-nav {
+header nav {
     display: flex;
     gap: 50px;
 }
@@ -30,4 +30,21 @@ nav {
   display: flex;
   align-items: center;
   gap: 100px;
+}
+
+footer{
+    background-color: black;
+    color: rgb(134, 134, 134);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+footer p {
+    max-width: 500px;
+}
+
+footer img {
+    position: relative;
+    left: 10px;
 }
