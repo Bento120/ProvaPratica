@@ -1,0 +1,33 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(24, 24, 24);
+}
+
+header {
+    background-color: rgb(96, 200, 248);
+}
+
+.logo{
+    position: relative;
+    left: 10px
+}
+
+nav a {
+    background-color: rgb(0, 120, 245);
+    color: white;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 10%;
+    padding: 5px 8px;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
