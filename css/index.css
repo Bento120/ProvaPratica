@@ -10,6 +10,11 @@ header {
 .logo{
     position: relative;
     left: 10px;
+    transition: transform 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 header nav a {
@@ -19,17 +24,32 @@ header nav a {
     border: 3px solid black;
     border-radius: 10%;
     padding: 5px 8px;
+    }
+
+header nav a:hover{
+    transform: scale(1.05);
 }
 
-header nav {
+header nav{
     display: flex;
     gap: 50px;
 }
 
-.cabecalho {
-  display: flex;
-  align-items: center;
-  gap: 100px;
+.carrinho {
+    background-color: rgb(30, 180, 30);
+    color: white;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 10%;
+    padding: 5px 8px;
+}
+
+.carrinho:hover{
+    transform: scale(1.05);
+}
+
+main{
+    color: white;
 }
 
 footer{
@@ -47,4 +67,10 @@ footer p {
 footer img {
     position: relative;
     left: 10px;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 130px;
 }
