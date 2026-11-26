@@ -7,22 +7,12 @@ header {
     background-color: rgb(96, 200, 248);
 }
 
-.logo{
-    position: relative;
-    left: 10px;
-    transition: transform 0.3s;
-}
-
-.logo:hover{
-    transform: scale(1.1);
-}
-
 header nav a {
     background-color: rgb(0, 120, 245);
     color: white;
     text-decoration: none;
     border: 3px solid black;
-    border-radius: 10%;
+    border-radius: 5px;
     padding: 5px 8px;
     }
 
@@ -35,22 +25,13 @@ header nav{
     gap: 50px;
 }
 
-.carrinho {
-    background-color: rgb(30, 180, 30);
-    color: white;
-    text-decoration: none;
-    border: 3px solid black;
-    border-radius: 10%;
-    padding: 5px 8px;
-}
-
-.carrinho:hover{
-    transform: scale(1.05);
-}
-
 main{
     color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
 
 footer{
     background-color: black;
@@ -69,8 +50,47 @@ footer img {
     left: 10px;
 }
 
+.logo{
+    position: relative;
+    left: 10px;
+    transition: transform 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
 .cabecalho {
   display: flex;
   align-items: center;
   gap: 130px;
+}
+
+.descricao{
+    color: rgb(100, 100, 100);
+}
+
+.carrinho {
+    background-color: rgb(30, 180, 30);
+    color: white;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.carrinho:hover{
+    transform: scale(1.05);
+}
+
+.formularioLogin{
+    background-color: rgb(34,34,34);
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+    max-width: 700px;
+    margin: 30px auto;
+    box-sizing: border-box;
 }

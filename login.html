@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -12,17 +13,32 @@
 
         <nav>
             <a href="produtos.html"><b>PRODUTOS</b></a>
-            <a href="SobreNos.html"><b>SOBRE NÓS</b></a>
+            <a href="sobre-nos.html"><b>SOBRE NÓS</b></a>
             <a href="login.html"><b>LOGIN</b></a>
         </nav>
         <a href="carrinho.html" class="carrinho"><b>CARRINHO</b></a>
     </header>
     <main>
+        <section class="formularioLogin">
+        <h1><b>Acesse sua conta</b></h1>
+        <p class="descricao">Infome seus dados para continuar</p>
+
+    
+        <form id="login">
+        <label for="email-login">E-mail</label>
+        <input type="email" id="email-login" name="email">
+        <br><br>
+        <label for="senha-login">Senha</label>
+        <input type="password" id="senha-login" name="senha" minlength="8">
+
+        <button type="submit" onclick="ativarBotao()">Entrar</button>
+        </form>
+        </section>
 
     </main>
     <Footer>
         <img src="assets/LogoTechStore.png" width="200" height="auto">
-        <p>TechStore é uma empresa fictícia com intuito de aprendizagem e estudo em desinvovimentos de sites/sistemas. Não pussue nenhum fim lucrativo.<br>© 2026 TechStore — Todos os direitos reservados.</p>
+        <p>TechStore é uma empresa fictícia com intuito de aprendizagem e estudo em desinvovimentos de sites/sistemas. Não pussue nenhum fim lucrativo.<br>© <span id="ano"></span> TechStore — Todos os direitos reservados.</p>
     </Footer>
 </body>
 </html>
