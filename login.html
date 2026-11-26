@@ -19,22 +19,38 @@
         <a href="carrinho.html" class="carrinho"><b>CARRINHO</b></a>
     </header>
     <main>
-        <section class="formularioLogin">
+        <div class="formularioLogin">
+        <section id="login">
         <h1><b>Acesse sua conta</b></h1>
         <p class="descricao">Infome seus dados para continuar</p>
 
     
-        <form id="login">
+        <form method="post" id="login">
         <label for="email-login">E-mail</label>
-        <input type="email" id="email-login" name="email">
+        <input type="email" id="email-login" name="email" autocomplete="username" placeholder="Insira seu email" required>
         <br><br>
         <label for="senha-login">Senha</label>
-        <input type="password" id="senha-login" name="senha" minlength="8">
+        <input type="password" id="senha-login" name="senha" minlength="8" autocomplete="current-password" placeholder="Insira sua senha" required>
 
         <button type="submit" onclick="ativarBotao()">Entrar</button>
         </form>
-        </section>
 
+        <p id="recuperarSenha" class="recuperarSenha" onclick="recuperarSenha()" onmouseover="sublinhadoRecuperarSenhaEscuro()" onmouseout="sublinhadoRecuperarSenhaClaro()">Esqueci minha senha</p>
+        </section>
+        <section id="recuperacao">
+            <h1>Recuperar senha</h1>
+            <p class="descricao">Informe seu e-mail para recuperar sua senha.</p>
+
+            <form method="post">
+            <label for="email-recuperacao">E-mail</label>
+            <input type="email" id="email-recuperacao" name="email" autocomplete="email" placeholder="Insira seu email" required>
+
+            <button type="submit">Enviar</button>
+            </form>
+
+            <button type="button" onclick="voltarLogin()">Voltar ao login</button>
+        </section>
+        </div>
     </main>
     <Footer>
         <img src="assets/LogoTechStore.png" width="200" height="auto">

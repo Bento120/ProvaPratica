@@ -50,6 +50,10 @@ footer img {
     left: 10px;
 }
 
+#recuperacao{
+    display: none;
+}
+
 .logo{
     position: relative;
     left: 10px;
@@ -68,7 +72,7 @@ footer img {
 }
 
 .descricao{
-    color: rgb(100, 100, 100);
+    color: rgb(140, 140, 140);
 }
 
 .carrinho {
@@ -87,10 +91,19 @@ footer img {
 .formularioLogin{
     background-color: rgb(34,34,34);
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
     padding: 25px;
     max-width: 700px;
     margin: 30px auto;
     box-sizing: border-box;
+
 }
+
+.recuperarSenha{
+    color: rgb(0, 120, 245);
+    text-decoration: underline 2px;
+    text-decoration-color: rgb(120, 180, 245);
+    cursor: pointer;
+}
+
