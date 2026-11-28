@@ -4,6 +4,11 @@ body {
     background-color: rgb(24, 24, 24);
 }
 
+.tituloPagina {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 main{
     color: white;
     max-width: 1200px;
@@ -41,6 +46,11 @@ header nav a {
     border: 3px solid black;
     border-radius: 5px;
     padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: bold;
     }
 
 header nav a:hover{
@@ -75,12 +85,45 @@ header nav{
     text-decoration: none;
     border: 3px solid black;
     border-radius: 5px;
-    padding: 5px 8px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.textoCarrinho{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
 }
 
 .carrinho:hover{
     transform: scale(1.05);
 }
+
+.mdi-account {
+    font-size: 30px;
+    color: white;
+}
+
+.mdi-cart{
+    font-size: 30px;
+    color: white;
+}
+
+.mdi-information-outline{
+    font-size: 30px;
+    color: white;
+}
+
+.mdi-package-variant-closed{
+    font-size: 30px;
+    color: white;
+}   
 
 /*Style da página login*/
 .formularioLogin{
@@ -92,7 +135,8 @@ header nav{
     max-width: 700px;
     margin: 30px auto;
     box-sizing: border-box;
-
+    display: flex; 
+    flex-direction: column;
 }
 
 .recuperarSenha{
@@ -100,8 +144,16 @@ header nav{
     text-decoration: underline 2px;
     text-decoration-color: rgb(120, 180, 245);
     cursor: pointer;
+    width: 25%;
+    margin: 40px auto;
 }
 
+.voltarLogin{
+    color: white;
+    cursor: pointer;
+    width: 18%;
+    margin: 60px auto;
+}
 
 #recuperacao{
     display: none;
@@ -109,4 +161,33 @@ header nav{
 
 .descricao{
     color: rgb(140, 140, 140);
+}
+
+.formularioLogin form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.botaopadrao{
+    border: none;
+    background-color: rgb(0, 120, 245);
+    color: white;
+    cursor: pointer;
+    width: 10%;
+    height: 30px;
+    border-radius: 5px;
+    width: 80px;
+    margin-top: 5px;
+}
+
+.formularioLogin input{
+    border-radius: 5px;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }

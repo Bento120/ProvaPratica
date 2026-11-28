@@ -5,52 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header class="cabecalho">
-        <a class="logo" href="index.html"><img id="Logo" src="assets/LogoTechStore.png" width="200" height="auto"></a>
-
-        <nav>
-            <a href="produtos.html"><b>PRODUTOS</b></a>
-            <a href="sobre-nos.html"><b>SOBRE NÓS</b></a>
-            <a href="login.html"><b>LOGIN</b></a>
-        </nav>
-        <a href="carrinho.html" class="carrinho"><b>CARRINHO</b></a>
-    </header>
+    <header class="cabecalho" id="cabecalho"></header>
     <main>
         <div class="formularioLogin">
         <section id="login">
-        <h1><b>Acesse sua conta</b></h1>
+        <h2 class="tituloPagina">Acesse sua Conta</h2>
         <p class="descricao">Infome seus dados para continuar</p>
 
-    
         <form method="post">
-        <label for="email-login">E-mail</label>
-        <input type="email" id="email-login" name="email" autocomplete="username" placeholder="Insira seu email" required>
-        <br><br>
-        <label for="senha-login">Senha</label>
-        <input type="password" id="senha-login" name="senha" minlength="8" autocomplete="current-password" placeholder="Insira sua senha" required>
+        <label for="email-login"></label>
+        <input type="email" id="email-login" name="email" autocomplete="username" placeholder="Email*" required oninvalid="this.setCustomValidity('Insira um e-mail válido.')" oninput="this.setCustomValidity('')">
+        
+        <label for="senha-login"></label>
+        <input type="password" id="senha-login" name="senha" minlength="8" autocomplete="current-password" placeholder="Senha*" required oninvalid="this.setCustomValidity('A senha deve ter no mínimo 8 caracteres')" oninput="this.setCustomValidity('')">
 
-        <button type="submit" onclick="ativarBotao()">Entrar</button>
+        <button type="submit" class="botaopadrao">Entrar</button>
         </form>
 
         <p id="recuperarSenha" class="recuperarSenha" onclick="recuperarSenha()" onmouseover="sublinhadoRecuperarSenhaEscuro()" onmouseout="sublinhadoRecuperarSenhaClaro()">Esqueci minha senha</p>
         </section>
+        
         <section id="recuperacao">
-            <h1>Recuperar senha</h1>
+            <h2 class="tituloPagina">Recuperar Senha</h2>
             <p class="descricao">Informe seu e-mail para recuperar sua senha.</p>
 
             <form method="post" onsubmit="event.preventDefault(); emailRecuperacao()">
-            <label for="email-recuperacao">E-mail</label>
-            <input type="email" id="email-recuperacao" name="email" autocomplete="email" placeholder="Insira seu email" required>
+            <label for="email-recuperacao"></label>
+            <input type="email" id="email-recuperacao" name="email" autocomplete="email" placeholder="Email*" required oninvalid="this.setCustomValidity('Insira um e-mail válido.')" oninput="this.setCustomValidity('')">
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="botaopadrao">Enviar</button>
             </form>
 
             <p id="status-recuperacao" role="status"></p>
             
-            <button type="button" onclick="voltarLogin()">Voltar ao login</button>
+            <p type="button" onclick="voltarLogin()" class="voltarLogin">Voltar ao Login</p>
         </section>
         </div>
     </main>
